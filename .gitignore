@@ -1,0 +1,33 @@
+# WordPress core (allt utom wp-content)
+wordpress/*
+!wordpress/wp-content/
+
+# WordPress wp-content (allt utom themes/plugins)
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+!wordpress/wp-content/plugins/
+
+# Men ignorera standard themes/plugins
+wordpress/wp-content/themes/twenty*/
+wordpress/wp-content/plugins/akismet/
+wordpress/wp-content/plugins/hello.php
+
+# Uploads och cache
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+
+# Config
+wordpress/wp-config.php
+wordpress/.htaccess
+
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
